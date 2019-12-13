@@ -6,12 +6,13 @@ public class passwordEncryped {
 
     public static void main (String[] args){
 
-        input=new Scanner(System.in);
+        input = new Scanner(System.in);
 
         char yn;
 
-        do{
-            System.out.println("Please input your five digit code : ");
+        do {
+
+            System.out.println("Please input your code : ");
             String str=input.next();
             System.out.println("Your original code is : "+str);
             System.out.print("Your new code is : ");
@@ -20,7 +21,9 @@ public class passwordEncryped {
             System.out.println("Would you like to Continue?(Y/N)");
             yn=input.next().charAt(0);
             System.out.println();
+
         } while(yn=='y' || yn=='Y');
+        
     }
 
     public static void encrypt(String str){
