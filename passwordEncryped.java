@@ -24,9 +24,7 @@ public class passwordEncryped {
     }
 
     public static void encrypt(String str){
-        if(str.length()>5){
-            System.out.println("Must be less than 5 digits");
-        } else{
+
             for(int i=0; i<str.length(); i++){
                 char c=str.charAt(i);
                 int itsascii=(int)c;
@@ -51,6 +49,5 @@ public class passwordEncryped {
                         break;
                 }
             }
-        }
     }
 }
